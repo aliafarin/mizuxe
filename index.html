@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- NavBar -->
+  <div class='navbar'>
+    <div class='brand'>
+      <a href="#home"><img alt="brand" src="img/mlogo.png" alt="brand"></a>
+      Mizuxe
+    </div>
+    <ul class='nav'>
+      <li><a href='#home'>Home</a></li>
+      <li><a href='#about'>About</a></li>
+      <li><a href='#meet-authors'>Meet The Authors</a></li>
+      <li><a href='#contact'>Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Container for page content -->
+  <div class='container'>
+
+    <!-- Home section -->
+    <section id="home">
+      <div class="home-background">
+        <div class='blue-overlay'>
+          <div class="home">
+            <div class="home-text">
+              <h1>Do What You <b>Dream</b> of ...</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam impedit, mollitia maiores vel magni eos.</p>
+              <a class="home-button" href="#"><i class="arrow right icon"></i>Read More</a>
+            </div>
+            <div class="home-pic">
+              <img src="img/book.png" alt="Book">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- subscribe section -->
+    <section class="subscribe">
+      <form>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <button class='sub-button' type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <!-- About section -->
+    <section  id="about">
+      <div class="cards">
+
+        <div class="card" style="background-color: rgba(50, 146, 166); color: white;">
+          <h4>Be Smarter</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, consequatur?</p>
+        </div>
+        <div class="card" style="background-color: white; color: rgba(50, 146, 166);">
+          <h4>Be Better</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, consequatur?</p>
+        </div>
+        <div class="card" style="background-color: rgba(50, 146, 166); color: white">
+          <h4>Be Faster</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, consequatur?</p>
+        </div>
+        <div class="card" style="background-color: white; color: rgba(50, 146, 166);">
+          <h4>Be Stronger</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, consequatur?</p>
+        </div>
+
+      </div>
+
+      <div class="text">
+        <h2>Why this book?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci fugit vel officia iste accusamus itaque.</p>
+      </div>
+
+      <div class="dropdowns">
+        <div class="dropdown" onclick="showDropdown(event)">
+          <span><i class="arrow alternate circle down icon"></i>Get Inspired</span>
+          <div class="dropdown-content show">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam optio inventore molestias.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam optio inventore molestias.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam optio inventore molestias.</p>
+          </div>
+        </div>
+
+        <div class="dropdown" onclick="showDropdown(event)">
+          <span><i class="arrow alternate circle down icon"></i>Gain Knowledge</span>
+          <div class="dropdown-content">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam optio inventore molestias.</p>
+          </div>
+        </div>
+
+        <div class="dropdown" onclick="showDropdown(event)">
+          <span><i class="arrow alternate circle down icon"></i>Open your Mind</span>
+          <div class="dropdown-content">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam optio inventore molestias.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meet Authors -->
+    <section id="meet-authors">
+      <div class="text">
+        <h2>Meet The Authors</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus consequuntur voluptate delectus dolore dolores ut, fuga doloribus eius?</p>
+      </div>
+      <div class="author-cards">
+        <div class="author-card">
+          <img src="img/person1.jpg" alt="writer">
+          <h4>Susan Williams</h4>
+          <h5>Writer</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum.</p>
+          <i class="instagram icon" style="color: white;"></i>
+        </div>
+        <div class="author-card">
+          <img src="img/person2.jpg" alt="co-writer">
+          <h4>Gray Smith</h4>
+          <h5>co-Writer</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt.</p>
+          <i class="instagram icon" style="color: white;"></i>
+        </div>
+        <div class="author-card">
+          <img src="img/person3.jpg" alt="editor">
+          <h4>Mark Smart</h4>
+          <h5>Editor</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt.</p>
+          <i class="instagram icon" style="color: white;"></i>
+        </div>
+        <div class="author-card">
+          <img src="img/person4.jpg" alt="designer">
+          <h4>Chandler Bing</h4>
+          <h5>Designer</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt.</p>
+          <i class="instagram icon" style="color: white;"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="contact">
+        <h3>Get in Contact</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ut odit repudiandae. Omnis, deleniti modi voluptatem fuga quisquam eligendi atque?</p>
+        <form>
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+          <textarea placeholder="Message" rows=5></textarea> 
+          <button class="sub-button" type="submit">Submit</button>
+        </form>
+      </div>  
+      <div class="brand-bottom">
+        <img src="img/mlogo.png" alt="LOGO">
+      </div>  
+    </section>
+  </div>
+  <footer class="footer">Copyright &copy 2020</footer>
+</body>
+</html>
+
+<script src="dropdown.js"></script>
