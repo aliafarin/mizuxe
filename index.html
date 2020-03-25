@@ -5,22 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <title>Document</title>
 </head>
 <body>
 
   <!-- NavBar -->
+  
   <div class='navbar'>
-    <div class='brand'>
-      <a href="#home"><img alt="brand" src="img/mlogo.png" alt="brand"></a>
-      Mizuxe
+    <i class="large bars icon"></i>
+    <div class="nav-show">
+      <div class='brand'>
+        <a href="#home"><img alt="brand" src="img/mlogo.png" alt="brand"></a>
+        Mizuxe
+      </div>
+      <ul class='nav'>
+        <li><a href='#home'>Home</a></li>
+        <li><a href='#about'>About</a></li>
+        <li><a href='#meet-authors'>Meet The Authors</a></li>
+        <li><a href='#contact'>Contact</a></li>
+      </ul>
     </div>
-    <ul class='nav'>
-      <li><a href='#home'>Home</a></li>
-      <li><a href='#about'>About</a></li>
-      <li><a href='#meet-authors'>Meet The Authors</a></li>
-      <li><a href='#contact'>Contact</a></li>
-    </ul>
   </div>
 
   <!-- Container for page content -->
@@ -45,13 +50,13 @@
     </section>
 
     <!-- subscribe section -->
-    <section class="subscribe">
+    <div class="subscribe">
       <form>
         <input type="text" placeholder="Name">
         <input type="email" placeholder="Email">
         <button class='sub-button' type="submit">Subscribe</button>
       </form>
-    </section>
+    </div>
 
     <!-- About section -->
     <section  id="about">
@@ -165,3 +170,5 @@
 </html>
 
 <script src="dropdown.js"></script>
+<script src="scrollSpy.js"></script>
+<script src="navbar.js"></script>
