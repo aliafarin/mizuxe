@@ -53,6 +53,10 @@ li a {
   color: rgba(0, 0, 0, 0.308);
 }
 
+.active {
+  color: rgba(50, 146, 166, 0.8);
+}
+
 li a:hover {
   color: black;
 }

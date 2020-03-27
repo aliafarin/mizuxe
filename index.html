@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <title>Document</title>
 </head>
 <body>
@@ -16,10 +17,10 @@
       Mizuxe
     </div>
     <ul class='nav'>
-      <li><a href='#home'>Home</a></li>
-      <li><a href='#about'>About</a></li>
-      <li><a href='#meet-authors'>Meet The Authors</a></li>
-      <li><a href='#contact'>Contact</a></li>
+      <li><a href='#home' data-id="home">Home</a></li>
+      <li><a href='#about' data-id="about">About</a></li>
+      <li><a href='#meet-authors' data-id="meet-authors">Meet The Authors</a></li>
+      <li><a href='#contact' data-id="contact">Contact</a></li>
     </ul>
   </div>
 
@@ -45,13 +46,13 @@
     </section>
 
     <!-- subscribe section -->
-    <section class="subscribe">
+    <div class="subscribe">
       <form>
         <input type="text" placeholder="Name">
         <input type="email" placeholder="Email">
         <button class='sub-button' type="submit">Subscribe</button>
       </form>
-    </section>
+    </div>
 
     <!-- About section -->
     <section  id="about">
@@ -165,3 +166,4 @@
 </html>
 
 <script src="dropdown.js"></script>
+<script src="scrollSpy.js"></script>
